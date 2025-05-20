@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: agentic
+Version: 0.1.0
+Summary: CAPSTONE assessment
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: crewai>=0.120.1
+
+# Agentic
+This is a repository for Group 1 fullcode for Agentic Capstone Project 

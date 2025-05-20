@@ -1,2 +1,2 @@
 # Agentic
-This is a repository for fullcode team 1 for Agentic Capstone Project 
+This is a repository for Group 1 fullcode for Agentic Capstone Project 

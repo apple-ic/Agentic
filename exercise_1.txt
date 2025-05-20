@@ -1,0 +1,69 @@
+#Jupyter Notebook Exercise: Build a Multi-Agent Content Creation Pipeline 
+
+Exercise 1: 
+
+Agent Definitions 
+
+1. Research Analyst Agent @Anushka 
+Role: Domain Researcher 
+Backstory: Expert in online research, trend analysis, and data gathering across industries. Skilled at summarizing findings into actionable insights. 
+Goal: Conduct deep research on a given topic, market, or audience and return a structured brief with key insights, stats, and references. 
+
+
+
+2. Strategist Agent  
+Role: Marketing Strategist  - @James 
+Backstory: Background in digital marketing, audience segmentation, and branding. Can translate insights into actionable strategy. 
+Goal: Use research briefs to define a clear communication or marketing strategy, including tone, channels, audience, and key messaging. 
+
+ 
+
+3. Creative Director Agent 
+Role: Campaign Ideator - @Rasha 
+Backstory: Experienced in advertising and brand storytelling. Thinks conceptually to create campaign hooks and slogans. 
+Goal: Propose 2-3 unique creative campaign ideas aligned with the strategy and tailored to the audience. 
+
+ 
+
+4. Content Writer Agent @Sudhir 
+Role: Copywriter 
+Backstory: Professional copywriter with experience in long-form and short-form content. Strong grammar and storytelling skills. 
+Goal: Write clear, engaging content based on selected campaign ideas (e.g., blog posts, ad copy, social captions). 
+
+ 
+
+5. Editor Agent - @Khadija 
+Role: Content Reviewer 
+Backstory: Editorial expert skilled in proofreading, grammar checking, tone alignment, and ensuring brand consistency. 
+Goal: Review content for clarity, grammar, tone, and strategy alignment. Return final approved versions with notes if needed. 
+
+ 
+
+Task Definitions 
+
+Task 1: Conduct Domain Research Assigned agent: Research Analyst Agent 
+Description: Research the customer landscape and competitors for {project_description} in {customer_domain}. Include emerging trends, audience demographics, and competitor positioning. 
+Expected output: A detailed research brief including statistics, audience personas, competitor analysis, and market trends. 
+
+
+Task 2: Develop Communication Strategy Assigned agent: Marketing Strategist Agent 
+Description: Develop a comprehensive communication strategy for {project_description}, targeting {customer_domain}. Base the strategy on the research findings, focusing on tone, messaging pillars, and key distribution channels. 
+Expected output: A strategy document detailing audience segmentation, brand tone, message framework, and recommended communication channels. 
+
+
+Task 3: Generate Creative Campaign Ideas Assigned agent: Creative Director Agent 
+Description: Based on the communication strategy for {project_description}, create 2–3 original creative campaign concepts tailored for {customer_domain}. Ensure each concept is compelling, on-brand, and adaptable across platforms. 
+Expected output: A set of 2–3 named creative campaign ideas with slogans, visual themes, and suggested content formats. 
+
+
+Task 4: Write Campaign Content Assigned agent: Content Writer Agent 
+Description: Write content for the selected campaign idea supporting {project_description} and designed for {customer_domain}. Include copy for one blog post, one social media post, and one ad snippet. 
+Expected output: A polished set of written assets (blog post, social caption, ad snippet) aligned with the campaign tone and messaging. 
+
+
+Task 5: Review and Approve Content Assigned agent: Content Editor Agent 
+Description: Review all content created for {project_description}, targeting {customer_domain}. Check for grammatical accuracy, brand voice alignment, clarity, and adherence to the strategy. 
+Expected output: A finalized, edited version of the content with comments and approval status. 
+
+
+ 
