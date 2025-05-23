@@ -1,0 +1,30 @@
+research_terms_task:
+  description: >
+    Research the company {company} and identify the terms of service of the company.
+  expected_output: >
+    A summary of the terms of service of the target company.
+  agent: research_analyst
+
+research_vibe_task:
+  description: >
+    Research how the company {company} is percieved within the UK.
+  expected_output: >
+    A summary of the general perception of the company.
+  agent: research_analyst
+
+ethical_task:
+  description: >
+    From the terms of service of company {company} and the general perception of it,
+    provide a grounded evaluation of the ethics of the company with respect to UK law and culture of the input data.
+  expected_output: >
+    A paragraph discussing the ethical considerations of working for the company.
+  agent: ethical_agent
+
+
+editor_task:
+  description: >
+    Review the content created for the review of company {company}.
+    Check for grammatical accuracy, clarity, and adherence to good writing standards.
+  expected_output: >
+    A finalised, edited version of the content with comments and approval status.
+  agent: editor_agent
