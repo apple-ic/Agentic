@@ -1,0 +1,35 @@
+ethical_outline_task:
+  description: >
+    Identify the key parts of a company to research that would reflect on the general ethics of the company.
+  expected_output: >
+    A concise list of key properties to search for and check against when considering the ethics of a company.
+  agent: ethical_agent
+
+research_terms_task:
+  description: >
+    Research the company {company} to identify material to support or refute the list of ethical properties provided.
+  expected_output: >
+    A summary of the terms of service of the target company.
+  agent: research_analyst
+
+research_vibe_task:
+  description: >
+    Research how the company {company} is percieved within the UK.
+  expected_output: >
+    A summary of the general perception of the company.
+  agent: research_analyst
+
+ethical_impact_task:
+  description: >
+    From what you have researched about company {company}, identify what the impacts would be if the company is unethical.
+  expected_output: >
+    A high-level overview of the impact of unethical actions by company {company}.
+  agent: ethical_agent
+
+editor_task:
+  description: >
+    Review the content created previously and create a report on the ethics of the company.
+    Check for grammatical accuracy, clarity, and adherence to good writing standards.
+  expected_output: >
+    A finalised, edited version of the content with comments and approval status.
+  agent: editor_agent
