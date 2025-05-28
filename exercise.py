@@ -53,6 +53,14 @@ creative_director = Agent(
     llm=llm
 )
 
+content_writer = Agent(
+    role="Content Writer",
+    goal="Write clear, engaging content based on selected campaign ideas (e.g., blog posts, ad copy, social captions)",
+    backstory="Experienced in writing and brand storytelling. Thinks conceptually to create campaign hooks and slogans.",
+    verbose=True,
+    llm=llm
+)
+
 editor_agent = Agent(
     role="Content Reviewer",
     backstory="An editorial expert skilled in proofreading, grammar checking, tone alignment, and ensuring brand consistency.",
@@ -86,10 +94,18 @@ campaign_ideation_task = Task(
     expected_output="2–3 creative campaign ideas including name, hook, and brief description."
 )
 
+content_writer_task = Task(
+    agent=content_writer,
+    description=f"""Write content for the selected campaign idea supporting {project_description} and designed for {customer_domain}. 
+                    Include copy for one blog post, one social media post, and one ad snippet. """,
+    expected_output="A polished set of written assets (blog post, social caption, ad snippet) aligned with the campaign tone and messaging."
+)
+
 editor_task = Task(
     agent=editor_agent,
     description=f"Review all content created for {project_description}, targeting {customer_domain}. Check for grammatical accuracy, brand voice alignment, clarity, and adherence to the strategy.",
-    expected_output="A finalised, edited version of the content with comments and approval status."
+    expected_output="A finalised, edited version of the content with comments and approval status.",
+    output_file=f"output/{customer_domain}_content.txt"
 )
 
 
@@ -99,6 +115,7 @@ agent_list=[
     research_analyst,
     strategist_agent,
     creative_director,
+    content_writer,
     editor_agent
 ]
 
@@ -106,6 +123,7 @@ task_list = [
     research_task,
     strategist_task,
     campaign_ideation_task,
+    content_writer_task,
     editor_task
 ]
 
