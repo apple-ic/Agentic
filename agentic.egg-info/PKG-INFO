@@ -5,6 +5,9 @@ Summary: CAPSTONE assessment
 Requires-Python: >=3.12
 Description-Content-Type: text/markdown
 Requires-Dist: crewai>=0.120.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: crewai-tools>0.45.0
 
 # Agentic
 This is a repository for Group 1 fullcode for Agentic Capstone Project 
